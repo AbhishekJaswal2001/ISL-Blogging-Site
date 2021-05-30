@@ -1,0 +1,311 @@
+
+<html>
+<head><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<title>Membership form</title>
+	<style>
+	@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+*:focus {
+  outline: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #DDD;
+  font-size: 16px;
+  color: #222;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+#login-box {
+  position: relative;
+  margin: 5% auto;
+  width: 600px;
+  height: 400px;
+  background: #FFF;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 300px;
+  height: 400px;
+}
+
+h1 {
+  margin: 0 0 20px 0;
+  font-weight: 300;
+  font-size: 28px;
+}
+
+input[type="text"],
+input[type="password"] {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 4px;
+  width: 220px;
+  height: 32px;
+  border: none;
+  border-bottom: 1px solid #AAA;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-bottom: 2px solid #16a085;
+  color: #16a085;
+  transition: 0.2s ease;
+}
+
+input[type="submit"] {
+  margin-top: 28px;
+  width: 120px;
+  height: 32px;
+  background: #16a085;
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: 0.1s ease;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  opacity: 0.8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+
+input[type="submit"]:active {
+  opacity: 1;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+
+.or {
+  position: absolute;
+  top: 180px;
+  left: 280px;
+  width: 40px;
+  height: 40px;
+  background: #DDD;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  line-height: 40px;
+  text-align: center;
+}
+
+.right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 300px;
+  height: 400px;
+  background: url('https://goo.gl/YbktSj');
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 2px 2px 0;
+}
+
+.right .loginwith {
+  display: block;
+  margin-bottom: 40px;
+  font-size: 28px;
+  color: #FFF;
+  text-align: center;
+}
+
+button.social-signin {
+  margin-bottom: 20px;
+  width: 220px;
+  height: 36px;
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+button.social-signin:hover,
+button.social-signin:focus {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.2s ease;
+}
+
+button.social-signin:active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.2s ease;
+}
+
+button.social-signin.facebook {
+  background: #32508E;
+}
+
+button.social-signin.twitter {
+  background: #55ACEE;
+}
+
+button.social-signin.google {
+  background: #DD4B39;
+}
+	.center {
+    margin: auto;
+    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}/* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+body {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #D3D3D3;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+}
+</style>
+<script type="text/javascript">
+	function a()
+	{alert("Enter Your Name");}
+	function b(x)
+	{x.style.background="yellow";}
+	function s()
+	{ alert("ThankYou Your Response is recorded");}
+	function eee()
+	{
+		alert("already reset")
+	}
+	function rr()
+	{
+		x=document.getElementById('12').value;
+		n(x,'First name can only have alphabets');
+		t=document.getElementById('32').value;
+		e(t,'Password can only have small alphabets and numbers');
+		z=document.getElementById('42').value;
+		e(t,'Password can only have small alphabets and numbers');
+		w();
+		q();
+		i();
+	}
+		function e(t,msg)
+{
+			c=/^[0-9 a-z ]+$/;
+			if(!(y.match(c)))
+				{alert(msg);}
+		}
+	function i(z,msg)
+{
+			c=/^[0-9 a-z ]+$/;
+			if(!(y.match(c)))
+				{alert(msg);}
+		}
+	function hie()
+	{
+		alert("Thank you for sign in ! check your e-mail for reference.")
+	}
+
+</script>
+<body bgcolor=  #ffffd8>
+   
+<ul>
+  <li><a  href="new.html" target="_self">Home</a></li>
+  <li><a  href="new2.html" >Gallery</a></li>
+  <li><a href="new4.html">History</a></li>
+  <li><a href="new5.html">Team Owners</a></li>
+  <li><a href="page7_best.html">Advertisement</a></li>
+  <li ><a href="form.html"><img src="icon.png" height="30px" width="30px"></a></li>
+
+</ul>
+<br>
+	<div class="center">
+
+<div id="login-box">
+  <div class="left">
+    <h1>Sign up</h1>
+    
+    <input type="text" name="username" placeholder="Username" id="12" />
+    <input type="text" name="email" placeholder="E-mail" id="22" />
+    <input type="password" name="password" placeholder="Password" id="32" />
+    <input type="password" name="password2" placeholder="Retype password" id="42" />
+    
+    <input type="submit" name="signup_submit" value="Sign me up" onclick="rr()" />
+  </div>
+  
+  <div class="right">
+    <span class="loginwith">Sign in with<br/>social network</span>
+    
+    <button class="social-signin facebook"><a href="https://www.facebook.com/IndianSuperLeague"target="_blank">Log in with facebook</a></button>
+    <button class="social-signin twitter"><a href="https://twitter.com/IndSuperLeague" target="_blank">Log in with Twitter</a></button>
+    <button class="social-signin google"><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Log in with Google+</button>
+  </div>
+  <div class="or">OR</div>
+</div></div>
+	<br>
+	<br><br>
+    <p><center><a href="https://www.facebook.com/IndianSuperLeague"target="_blank">
+<img src="f2.jpg" height="4%" width="3%" ></a>
+<a href="https://twitter.com/IndSuperLeague" target="_blank">
+<img src="twitter.jpg" height="4%" width="3%" ></a>
+<a href="https://www.instagram.com/explore/tags/isl/"target="_blank">
+<img src="instagram.png" height="4%"width="3%" ></a></center></p>
+<p style="text-align: center;">©:2018-19  <a href="new.html">www.ourwebsite.com</a></p>
+	
+	
+</form>
+</body>
+</html>
